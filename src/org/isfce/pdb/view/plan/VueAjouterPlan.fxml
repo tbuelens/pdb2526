@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane prefHeight="200.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.isfce.pdb.view.plan.VueAjouterPlanController">
+   <children>
+      <Label text="%plan.creer.titre" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <styleClass>
+            <String fx:value="titre" />
+         </styleClass>
+      </Label>
+      <Label prefWidth="180.0" styleClass="main-label" text="%plan.nom" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="60.0" />
+      <TextField fx:id="ztNom" prefWidth="280.0" styleClass="main-text-field" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="58.0" />
+      <Label prefWidth="180.0" styleClass="main-label" text="%plan.installation" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="105.0" />
+      <TextField fx:id="ztInstallation" prefWidth="280.0" styleClass="main-text-field" AnchorPane.leftAnchor="200.0" AnchorPane.topAnchor="103.0" />
+      <HBox alignment="CENTER_RIGHT" prefHeight="40.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#actionAnnuler" text="%action.annuler" />
+            <Button mnemonicParsing="false" onAction="#actionValider" text="%action.ok" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>

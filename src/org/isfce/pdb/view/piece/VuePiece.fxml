@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+
+<AnchorPane prefHeight="346.0" prefWidth="700.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="org.isfce.pdb.view.piece.VuePieceController">
+   <children>
+      <Label layoutX="44.0" layoutY="14.0" prefHeight="18.0" prefWidth="611.0" text="%titre.piece.creer" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+         <styleClass>
+            <String fx:value="titre" />
+         </styleClass>
+      </Label>
+      <Label layoutX="34.0" layoutY="99.0" prefHeight="18.0" prefWidth="134.0" styleClass="main-label" text="%piece.nom" AnchorPane.leftAnchor="10.0" />
+      <TextField fx:id="ztNom" layoutX="156.0" layoutY="100.0" prefHeight="26.0" prefWidth="529.0" styleClass="main-text-field" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="140.0" prefHeight="18.0" prefWidth="134.0" styleClass="main-label" text="%piece.description" />
+      <TextField fx:id="ztDescription" layoutX="150.0" layoutY="141.0" prefHeight="26.0" prefWidth="529.0" styleClass="main-text-field" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="10.0" />
+      <Label layoutX="10.0" layoutY="180.0" prefHeight="18.0" prefWidth="134.0" styleClass="main-label" text="%piece.etage" />
+      <Spinner fx:id="spEtage" layoutX="151.0" layoutY="182.0" />
+      <Label layoutX="10.0" layoutY="221.0" prefHeight="18.0" prefWidth="134.0" styleClass="main-label" text="%piece.typePiece" />
+      <ComboBox fx:id="cbTypePiece" editable="true" layoutX="152.0" layoutY="223.0" prefHeight="26.0" prefWidth="539.0" AnchorPane.leftAnchor="150.0" AnchorPane.rightAnchor="10.0" />
+      <HBox alignment="CENTER_RIGHT" layoutX="10.0" layoutY="287.0" prefHeight="38.0" prefWidth="678.0" spacing="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="12.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#actionAnnuler" text="%action.annuler" />
+            <Button mnemonicParsing="false" onAction="#actionValider" text="%action.ok" />
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
